@@ -28,7 +28,10 @@ TFM-smart-food-recommender/
 │   ├── 01_exploracion_uec256.ipynb
 │   ├── 02_exploracion_fruits360.ipynb
 │   ├── 03_experimento_fruits360_yolov8n.ipynb
-│   └── 04_entrenamiento_yolov8_uec256.ipynb
+│   ├── 04_entrenamiento_yolov8_uec256.ipynb
+│   ├── 05_pruebas_usda_api.ipynb
+│   ├── 06_tabla_maestra_nutricional.ipynb
+│   └── 07_validacion_yolov8_nevera.ipynb
 ├── src/
 │   ├── detection/                    # Detección con YOLOv8
 │   ├── nutrition/                    # Consulta USDA API
