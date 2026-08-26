@@ -24,24 +24,27 @@ Generación de receta (OpenAI API)
 
 ```
 TFM-smart-food-recommender/
-├── notebooks/                        # Experimentos en Kaggle
-│   ├── 01_exploracion_uec256.ipynb
-│   ├── 02_exploracion_fruits360.ipynb
-│   ├── 03_experimento_fruits360_yolov8n.ipynb
-│   ├── 04_entrenamiento_yolov8_uec256.ipynb
-│   ├── 05_pruebas_usda_api.ipynb
-│   ├── 06_tabla_maestra_nutricional.ipynb
-│   └── 07_validacion_yolov8_nevera.ipynb
-├── src/
-│   ├── detection/                    # Detección con YOLOv8
-│   ├── nutrition/                    # Consulta USDA API
-│   ├── recommendation/               # Scoring multiobjetivo
-│   └── app/                          # Interfaz Streamlit
-├── configs/                          # Configuración YOLO
-├── data/                             # No incluido en el repositorio
-├── models/                           # No incluido en el repositorio
-└── results/                          # Métricas y figuras
+└── notebooks/
+    ├── 01_exploracion_uec256.ipynb
+    ├── 02_exploracion_fruits360.ipynb
+    ├── 03_experimento_fruits360_yolov8n_1.ipynb
+    ├── 04_entrenamiento_yolov8_uec256.ipynb
+    ├── 05_pruebas_usda_api.ipynb
+    ├── 06_tabla_maestra_nutricional.ipynb
+    ├── 07_validacion_yolov8_nevera.ipynb
+    ├── src/
+    │   ├── detection/                # Detección con YOLOv8
+    │   ├── nutrition/                # Consulta USDA API
+    │   ├── recommendation/           # Scoring multiobjetivo
+    │   └── app/                      # Interfaz Streamlit (pendiente)
+    ├── configs/                      # Configuración YOLO
+    ├── data/                         # No incluido en el repositorio
+    ├── models/                       # No incluido en el repositorio
+    └── results/
+        └── figures/                  # Métricas y figuras
 ```
+
+> `src/app/` con la interfaz Streamlit está pendiente de desarrollo — todavía no existe en el repositorio.
 
 ## Tecnologías
 
@@ -62,7 +65,7 @@ Los datos originales no se incluyen en este repositorio.
 
 ## Entrenamiento
 
-Los experimentos se ejecutaron en **Kaggle Notebooks** con GPU NVIDIA Tesla P100 (16GB).
+Los experimentos de detección y clasificación (notebooks 01-04) se ejecutaron en **Kaggle Notebooks** con GPU NVIDIA Tesla P100/Tesla T4. Los experimentos de la fase de nutrición y validación (notebooks 05-07) se ejecutaron en **Google Colab**.
 
 ## Autor
 
