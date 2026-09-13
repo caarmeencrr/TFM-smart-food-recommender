@@ -2,6 +2,13 @@
 preprocessing.py
 Conversión de anotaciones UEC Food-256 al formato YOLOv8
 y generación del split train/val/test.
+
+NOTA: la lista CATEGORIAS_OBJETIVO de este módulo es un ejemplo de una fase
+temprana del proyecto y no coincide con las categorías objetivo realmente
+usadas en el experimento final sobre UEC Food-256 (basadas en estadísticas
+de desperdicio de CE-Bioeconomy Brief 2021, WRAP 2022 y Frontiers Nutrition
+2023). La selección y el preprocesamiento realmente ejecutados están
+documentados en notebooks/04_entrenamiento_yolov8_uec256.ipynb.
 """
 
 import os
