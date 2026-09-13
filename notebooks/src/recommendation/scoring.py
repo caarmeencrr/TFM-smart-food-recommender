@@ -2,6 +2,13 @@
 scoring.py
 Función de optimización multiobjetivo para la recomendación de alimentos.
 Pondera valor nutricional, sostenibilidad ambiental y urgencia de consumo.
+
+NOTA: esta es una implementación de referencia, más simple y didáctica,
+de una fase temprana del proyecto. La aplicación final (src/app/app.py)
+implementa su propia versión de la función de puntuación —con pesos
+ajustables por el usuario desde la interfaz y componentes adicionales
+(restricciones duras OBLIGATORIO/RESTRINGIDO)—, descrita en la memoria,
+Capítulo 4, sección 4.2.4.
 """
 
 
